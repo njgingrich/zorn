@@ -1,0 +1,15 @@
+$font-main: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-title: "Fjalla One", sans-serif;
+// Colors
+$black: #222222;
+$white: #FAFAFA;
+
+// Typography
+$color-text-light: $white;
+$color-text-dark: $black;
+
+// Mixins
+@mixin title {
+  font-family: $font-title;
+  font-size: 56px;
+}
