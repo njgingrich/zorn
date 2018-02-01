@@ -1,6 +1,6 @@
 <template>
   <section class="bio-container">
-    <h1 class="bio-container__title">Bio</h1>
+    <h2 class="bio-container__title" data-title="Bio">Bio</h2>
     <p class="bio-container__text">
       Somehow manage to catch a bird but have no idea what to do next, so play with it until it dies of shock.
       Hit you unexpectedly mice for eat prawns daintily with a claw then lick paws clean wash down prawns with
@@ -14,18 +14,17 @@
 </template>
 <script>
 export default {
-  layout: 'page'
 }
 </script>
 <style lang="scss">
 @import "~assets/style/variables";
 
 .bio-container {
-  padding-top: 128px;
+  padding-top: 96px;
   padding-left: 128px;
 
   &__title {
-    @include title;
+    @include fancy-title;
   }
 
   &__text {

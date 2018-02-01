@@ -14,6 +14,13 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Fjalla+One|Rubik' }
     ]
   },
+  css: [
+    '~assets/style/main.scss'
+  ],
+  router: {
+    linkExactActiveClass: 'active-link',
+    linkActiveClass: 'active-link-inexact'
+  },
   /*
   ** Customize the progress bar color
   */
@@ -35,5 +42,8 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  plugins: [
+    { src: '~/plugins/svgicon.js' }
+  ]
 }

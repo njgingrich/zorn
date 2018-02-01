@@ -1,0 +1,66 @@
+@mixin fancy-title-sm {
+  @include fancy-title;
+  &:before {
+    left: 2px;
+    top: 2px;
+    transition: none;
+  }
+
+  &:hover {
+    &:before {
+      left: 2px;
+      top: 2px;
+    }
+  }
+
+  color: $purple;
+  font-size: 32px;
+}
+
+@mixin fancy-title {
+  @include title;
+  position: relative;
+  width: fit-content;
+  color: $purple;
+
+  &:before {
+    content: attr(data-title);
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    color: $white;
+    transition: all 0.2s ease;
+  }
+
+  &:hover {
+    &:before {
+      left: 6px;
+      top: 6px;
+    }
+  }
+}
+
+@mixin title {
+  font-family: $font-title;
+  font-size: 56px;
+}
+
+@mixin link {
+  margin-bottom: 8px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: $color-text-light;
+  transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.675);
+
+  &:hover, &:visited {
+    color: $color-text-light;
+  }
+
+  &:hover {
+    color: $color-text-highlight;
+    letter-spacing: 0.15em;
+    transform: skewX(-16deg);
+  }
+}
