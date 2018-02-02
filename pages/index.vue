@@ -41,7 +41,7 @@ export default {
   }
 
   @media screen and (min-width: $bp-sm) {
-    padding-top: 24px;
+    padding-top: 24vh;
   }
 }
 
