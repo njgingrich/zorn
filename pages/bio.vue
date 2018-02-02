@@ -1,7 +1,7 @@
 <template>
-  <section class="bio-container">
-    <h2 class="bio-container__title" data-title="Bio">Bio</h2>
-    <p class="bio-container__text">
+  <section class="container">
+    <h2 class="container__title" data-title="Bio">Bio</h2>
+    <p class="container__text">
       Somehow manage to catch a bird but have no idea what to do next, so play with it until it dies of shock.
       Hit you unexpectedly mice for eat prawns daintily with a claw then lick paws clean wash down prawns with
       a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking
@@ -17,18 +17,4 @@ export default {
 }
 </script>
 <style lang="scss">
-@import "~assets/style/variables";
-
-.bio-container {
-  padding-top: 96px;
-  padding-left: 128px;
-
-  &__title {
-    @include fancy-title;
-  }
-
-  &__text {
-    width: 50%;
-  }
-}
 </style>

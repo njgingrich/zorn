@@ -15,6 +15,35 @@
 <style lang="scss">
 @import "~assets/style/variables";
 
+.container {
+  margin: 10vh 6vw;
+  font-size: 18px;
+
+  @media screen and (min-width: $bp-sm) {
+    max-width: 60vw;
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $bp-lg) {
+    max-width: 600px;
+  }
+
+  &__link {
+    font-family: $font-title;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    @include fancy-title;
+  }
+
+  &__text {
+    padding: 8px;
+    font-size: 18px;
+    background-color: rgba($true-black, 0.75);
+  }
+}
+
 .top-navigation {
   display: flex;
   width: 100%;
