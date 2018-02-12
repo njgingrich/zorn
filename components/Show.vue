@@ -29,7 +29,7 @@ export default {
 
   &__image {
     max-width: 100px;
-    max-height: 150px;
+    max-height: 170px;
 
     @media screen and (min-width: $bp-sm) {
       max-width: 200px;
@@ -50,7 +50,7 @@ export default {
 
   &__title {
     width: fit-content;
-    padding: 8px 8px 8px 0;
+    padding: 8px 8px 8px 4px;
     margin-bottom: 8px;
     font-size: 28px;
     font-family: $font-title;

@@ -43,6 +43,9 @@ module.exports = {
       }
     }
   },
+  generate: {
+    'dir': 'docs'
+  },
   plugins: [
     { src: '~/plugins/svgicon.js' }
   ]
