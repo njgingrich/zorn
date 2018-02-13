@@ -19,7 +19,8 @@ module.exports = {
   ],
   router: {
     linkExactActiveClass: 'active-link',
-    linkActiveClass: 'active-link-inexact'
+    linkActiveClass: 'active-link-inexact',
+    base: '/'
   },
   /*
   ** Customize the progress bar color
