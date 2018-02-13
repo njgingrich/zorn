@@ -20,7 +20,7 @@ module.exports = {
   router: {
     linkExactActiveClass: 'active-link',
     linkActiveClass: 'active-link-inexact',
-    base: '/'
+    base: '/zorn/'
   },
   /*
   ** Customize the progress bar color
